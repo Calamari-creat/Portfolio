@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calamari | Portfólio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="img/logo.png" alt="Calamari">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <canvas id="matrix-canvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img class="hero-logo" src="img/logo.png" alt="Calamari Logo">
+            <h1 class="hero-title">
+                <span class="line1">Ideias</span>
+                <span class="line2">que se transformam em</span>
+                <span class="line3"><span class="highlight">código</span></span>
+            </h1>
+            <p class="hero-subtitle">Full-stack Developer</p>
+            <div class="hero-cta">
+                <a href="#projetos" class="btn-primary">VER PROJETOS</a>
+                <a href="#contato" class="btn-outline">CONTATO</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll para descobrir</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section sobre">
+        <canvas class="section-particles"></canvas>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sobre</span>
+                <h2>Conheça um pouco<br><span class="highlight">sobre mim</span></h2>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-text">
+                    <p class="typewriter-text">Olá! Me chamo <strong>Calamari</strong>, desenvolvedor full-stack apaixonado por criar experiências digitais únicas e funcionais. Trabalho com tecnologias modernas para transformar ideias em produtos reais.</p>
+                    <p class="typewriter-text">Com experiência em desenvolvimento web e mobile, busco sempre entregar soluções completas — do planejamento à implantação.</p>
+                    <div class="sobre-info">
+                        <div class="info-item">
+                            <span class="info-label">Nome</span>
+                            <span class="info-value">Calamari</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Área</span>
+                            <span class="info-value">Full-stack Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Localização</span>
+                            <span class="info-value">Rio de Janeiro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="1">0</span>
+                        <span class="stat-label">Ano de experiência</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="0">0</span>
+                        <span class="stat-label">Projetos realizados</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="0">0</span>
+                        <span class="stat-label">Clientes satisfeitos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section projetos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projetos</span>
+                <h2>Meus <span class="highlight">trabalhos</span></h2>
+            </div>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <div class="card-image">
+                        <img src="img/Projeto pringles Azul.png" alt="Pringles">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Web, Mobile</span>
+                        <h3>Pringles</h3>
+                        <p>Projeto de estudo sobre a Pringles.</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-small">Ver mais</a>
+                            <a href="#" class="btn-small-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <div class="card-image">
+                        <img src="img/Portfolio.png" alt="Monster Energy">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Web, Mobile</span>
+                        <h3>Monster Energy</h3>
+                        <p>Projeto de estudo sobre a Monster.</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-small">Ver mais</a>
+                            <a href="#" class="btn-small-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <div class="card-image">
+                        <div class="card-placeholder">Em breve</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">API</span>
+                        <h3>Projeto 3</h3>
+                        <p>Descrição breve do projeto e tecnologias utilizadas.</p>
+                        <div class="card-links">
+                            <a href="#" class="btn-small">Ver mais</a>
+                            <a href="#" class="btn-small-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2>Minhas <span class="highlight">habilidades</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Front-end</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>React / Next.js</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TypeScript</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>HTML & CSS</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Back-end</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Ferramentas</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Docker</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="section experiencia">
+        <img src="img/sentado.png" alt="" class="exp-ilustra">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experiência</span>
+                <h2>Minha <span class="highlight">trajetória</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026 - Presente</span>
+                        <h3>Desenvolvedor Full-stack</h3>
+                        <span class="timeline-company">Freelancer</span>
+                        <p>Desenvolvimento de aplicações web completas, do front-end ao back-end, utilizando React, Node.js e PostgreSQL.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - 2026</span>
+                        <h3>Desenvolvedor Front-end</h3>
+                        <span class="timeline-company">Agência Digital</span>
+                        <p>Criação de interfaces responsivas e modernas com React e TypeScript.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>Estagiário em Desenvolvimento</h3>
+                        <span class="timeline-company">Startup Tech</span>
+                        <p>Suporte no desenvolvimento de features, correção de bugs e participação em code reviews.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contato">
+        <canvas class="section-particles"></canvas>
+        <img src="img/fred.png" alt="" class="contato-ilustra">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contato</span>
+                <h2>Vamos <span class="highlight">conversar?</span></h2>
+            </div>
+            <div class="contato-grid">
+                <form class="contato-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">ENVIAR MENSAGEM</button>
+                </form>
+                <div class="contato-info">
+                    <div class="contato-item">
+                        <span class="contato-icon">email</span>
+                        <div>
+                            <span class="contato-label">Email</span>
+                            <span class="contato-value">calamaricontato@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icon">local</span>
+                        <div>
+                            <span class="contato-label">Localização</span>
+                            <span class="contato-value">Rio de Janeiro</span>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icon">social</span>
+                        <div>
+                            <span class="contato-label">Social</span>
+                            <div class="contato-social">
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="img/logo.png" alt="Calamari" class="footer-logo">
+                <p>&copy; 2026 Calamari. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <audio id="bg-music" src="img/AdhesiveWombat - Night Shade.mp3" preload="auto"></audio>
+    <button id="music-toggle" class="music-btn" aria-label="Play/Pause música"></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
