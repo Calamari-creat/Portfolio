@@ -692,6 +692,19 @@ document.querySelectorAll(".contato-form input, .contato-form textarea").forEach
 });
 
 // ============================================
+// WHATSAPP
+// ============================================
+
+function enviarWhatsApp(event) {
+    event.preventDefault();
+    const nome = document.getElementById("whatsapp-nome").value;
+    const email = document.getElementById("whatsapp-email").value;
+    const msg = document.getElementById("whatsapp-msg").value;
+    const texto = `Olá! Me chamo ${nome} (${email}). ${msg}`;
+    window.open(`https://wa.me/5521989898923?text=${encodeURIComponent(texto)}`, "_blank");
+}
+
+// ============================================
 // REFRESH SCROLLTRIGGER ON LOAD
 // ============================================
 
