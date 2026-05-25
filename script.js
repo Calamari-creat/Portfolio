@@ -700,7 +700,7 @@ function enviarWhatsApp(event) {
     const nome = document.getElementById("whatsapp-nome").value;
     const email = document.getElementById("whatsapp-email").value;
     const msg = document.getElementById("whatsapp-msg").value;
-    const texto = `Olá! Me chamo ${nome} (${email}). ${msg}`;
+    const texto = `oi! Meu nome é ${nome} (${email}), ${msg}`;
     window.open(`https://wa.me/5521989898923?text=${encodeURIComponent(texto)}`, "_blank");
 }
 
